@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Secret Love</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>Secret Love</h1>
+        </nav>
+    </header>
+    
+    <section id="declarationSection">
+        <div class="mePart">
+            <h2>Moi</h2>
+            <input type="text" name="" id="nom" placeholder="Entrez votre nom">
+            <input type="text" name="" id="prenom" placeholder="Entrez votre prenom">
+            <h3>Sexe</h3>
+            <div class="sex">
+                <label for="M">
+                Masculin
+                <input type="radio" name="sexe" id="M" value="M">
+            </label>
+             <label for="F">
+                Feminin
+                <input type="radio" name="sexe" id="F" value="F">
+            </label>
+        </div>
+        </div>
+        <div class="himPart">
+            <h2>Lui</h2>
+            <input type="text" name="" id="loveNom" placeholder="Entrez son nom">
+            <input type="text" name="" id="lovePrenom" placeholder="Entrez son prenom">
+        </div>
+        <div class="questionPart">
+            <h2>Qestion/Reponse</h2>
+            <input type="text" name="" id="q" placeholder="Entrez votre question secrete">
+            <input type="text" name="" id="a" placeholder="Entrez la reponse exate">
+        </div>
+        <div class="confirmPart">
+            <label for="confirm"> <input type="checkbox" name="" id="confirm"> Je declare sur l'honneur que les informations fourni ci-dessus sont vraies</label>
+        </div>
+        <button id="decSubmit">Submit</button>
+    </section>
+    <section id="copySection">
+       <div>
+            <h2>Copier votre message</h2>
+            <h3>Copier votre challenge et partager le à vos amis</h3>
+            <textarea id="copierInput" readonly rows="12" cols="40"></textarea>
+            <button id="copybutton">Copier</button>
+        </div>
+    </section>
+    <section id="answerSection">
+       <div>
+            <h2 id="qName">La question de [name] est:</h2>
+            <h3 id="qQuestion">Si Dieu est puissant, peut-il creer un etre plus puissant que lui ?</h3>
+            <input type="text" id="repondez" placeholder="Repondez à la question">
+            <button id="verif">Vérifier</button>
+        </div>
+    </section>
+    <section id="rejetedSection">
+        <div>
+            <h2 id="rName">réjeté, vous n'etes pas apte à voir le nom de l'amoureux de [name]</h2>
+            <img src="assets/rejected.png" alt="rejected image">
+            <button class="retry" onclick="reset()">Créer mon propre quiz</button>
+        </div>
+    </section>
+    <section id="acceptedSection">
+        <div>
+            <h2 id="aName">accepté, [name] est amoureux de [love name]</h2>
+            <img src="assets/aprouved.png" alt="aprouved image">
+            <button class="retry" onclick="reset()">Créer mon propre quiz </button>
+        </div>
+    </section>
+<script src="scripts/script.js"></script>    
+</body>
+</html>

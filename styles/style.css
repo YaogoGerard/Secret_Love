@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("/assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{ 
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    color: brown;
+}
+#declarationSection{
+    display: flex;
+    flex-direction: column;
+}
+.mePart h2 , .himPart h2, .questionPart h2{
+    border-bottom: 4px solid white;
+    border-radius: 5px;
+}
+.mePart,.himPart,.questionPart, .confirmPart , #answerSection div, #rejetedSection div,#acceptedSection div ,#copySection div{
+    background-color: brown;
+    border-radius:0 30px ;
+    padding: 50px;
+    width: 50%;
+    min-width: 350px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    color: white;
+    transition: ease 0.3s;
+
+}
+.mePart:hover,.himPart:hover,.questionPart:hover, .confirmPart:hover , #answerSection div:hover, #rejetedSection div:hover,#acceptedSection div:hover,#copySection div:hover{
+    border: 2px solid white;
+}
+button{
+    width: 150px;
+    margin: 8px auto;
+    padding: 15px;
+    border-radius: 0 30px;
+    font-weight: bold;
+    color: brown;
+    transition: ease 0.3s;
+}
+button:hover{
+    background-color: orange;
+    color: white;
+    transform: scale(1.1);
+}
+.mePart input,.himPart input,.questionPart input,#answerSection div input, #copySection div input{
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+}
+input::placeholder{
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+}
+.mePart h3{
+    align-self: flex-start; 
+}
+.mePart .sex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#answerSection{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#rejetedSection{
+    display: flex;
+    flex-direction: column;
+}
+#acceptedSection{
+    display: flex;
+    flex-direction: column;
+}
+.hidden{
+    display: none !important;
+}
+.retry{
+    width: 70%;
+}
+textarea{
+    width:80%;
+}
